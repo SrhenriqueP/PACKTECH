@@ -1837,3 +1837,38 @@ label.bookly-square {
 .pac-container {
     z-index: 1000000 !important;
 }
+
+/* Para navegadores WebKit (Chrome, Safari, etc.) */
+/* Altera a largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Altera o fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo */
+  }
+  
+  /* Altera a cor do indicador de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background: #0ba85f; /* Cor do indicador de rolagem */
+  }
+  
+  /* Altera a cor do indicador de rolagem quando o mouse passa por cima */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #11c952; /* Cor do indicador de rolagem quando o mouse passa por cima */
+  }
+  
+  /* Para navegadores Gecko (Firefox) */
+  /* Altera a largura da barra de rolagem */
+  html {
+    scrollbar-width: thin;
+    /* Altera a cor da barra de rolagem */
+    scrollbar-color: #888 #f1f1f1; /* Cor do indicador de rolagem na posição atual, Cor do fundo */
+  }
+  
+  /* Altera a cor da barra de rolagem */
+  body {
+    scrollbar-color: #888 #f1f1f1; /* Cor do indicador de rolagem na posição atual, Cor do fundo */
+  }
+  
